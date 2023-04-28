@@ -1,15 +1,23 @@
-import './App.css';
-import Weather from './Weather';
-
-function App() {
+import React from "react";
+import "./App.css";
+import Weather from "./Weather";
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello</h1>
-        <Weather />
-      </header>
+      <div className="container">
+        <h1>Weather App</h1>
+        <Weather defaultCity="Kharkiv" />
+        <footer>
+          This project was coded by Nat Voronjanska and is {""}
+          <a
+            href="https://github.com/NatVoronianska/weather-react-app"
+            target="blank"
+            rel=""
+          >
+            open-sourced on GitHub
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
